@@ -1,0 +1,284 @@
+body{
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding-top: 128px;
+  color: rgb(5, 5, 5);
+  background-color: rgb(229, 231, 235);
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(16, 63, 69);
+  padding-bottom: 8px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 8px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-right{
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  background-color: rgb(255, 217, 45);
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0.2;
+}
+
+.header-right:hover{
+  background-color: rgb(245, 207, 35);
+}
+
+.cart-pic{
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.cart-link{
+  text-decoration: none;
+}
+
+.header-left{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.cs-logo-text{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 15px;
+  width: 240px;
+  line-height: 22px;
+}
+
+.close-order{
+  background-color: rgb(248, 114, 114);
+  color: rgb(71, 0, 0);
+  line-height: 24px;
+  display: flex;
+  padding: 16px;
+  width: 480px;
+  border-radius: 16px;
+  align-items: center;
+  margin-bottom: 32px;
+  box-shadow: 1px 2px 10px rgb(173, 172, 172);
+  margin-left: 400px;
+}
+
+.cross-icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.urge-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 32px;
+  row-gap: 4px;
+  margin-bottom: 24px;
+}
+
+.urge1{
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.urge2{
+  font-size: 18px;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/*shirt-section*/
+.shirt-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 32px;
+  column-gap: 32px;
+}
+
+@media (min-width: 1024px){
+  .shirt-section{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .shirt-section{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 767px){
+  .shirt-section{
+    grid-template-columns: 1fr;
+  }
+}
+
+.shirt{
+  background-color: rgb(249 250 251);
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px rgb(173, 172, 172);
+}
+
+.display-section{
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shirt-img{
+  height: 320px;
+  width: 377px;
+  object-fit: contain;
+}
+
+.dot{
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-button{
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  border: none;
+  margin: 7px;
+  background-color: rgb(204, 204, 204);
+  transition: 0.2s;
+}
+
+.dot-button:active{
+  background-color: rgb(168, 156, 200); 
+}
+
+.descrip-section{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  column-gap: 12px;
+  line-height: 24px;
+  padding: 32px;
+}
+
+.descrip-type{
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.unavailable-button{
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-left: 95.3594px;
+  margin-right: 95.3594px;
+  margin-top: 12px;
+  background-color: gray;
+  opacity: 0.35;
+}
+
+.small-icon {
+  width: 24px; /* Adjust the width to your desired size */
+  height: 24px; /* Adjust the height to your desired size */
+}
+
+.cap-img{
+  height: 224px;
+  padding: 48px;
+  object-fit: contain;
+}
+
+/*below display section*/
+.below-display-section{
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.6;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.footer-section{
+  display: grid;
+  background-color: rgb(20, 38, 40);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 64px;
+  align-items: center;
+  grid-auto-flow: column;
+  justify-items: start;
+  column-gap: 16px;
+  row-gap: 4px;
+  line-height: 20px;
+}
+
+.footer-text{
+  font-size: 14px;
+  color: rgb(244, 244, 244)
+}
+
+.footer-icon{
+  align-items: start;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 16px;
+  row-gap: 16px;
+  justify-self: end;
+  align-self: center;
+}
+
+.insta-icon{
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+
